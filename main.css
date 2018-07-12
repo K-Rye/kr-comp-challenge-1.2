@@ -1,0 +1,232 @@
+body {
+  font-family: 'wrestlemania', serif;
+  border: 10px solid;
+  border-color: gray;
+  color: black;
+}
+
+h1 {
+  font-size: 47px;
+}
+
+p {
+  font-size: 30px;
+}
+
+.icon-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: minmax(16.7rem, auto); 
+  align-content: center;
+  grid-template-areas: 
+    "box1 box1 box2 box9 box9"
+    "box3 box4 box5 box9 box9"
+    "box6 box7 box8 box9 box9";
+}
+
+.box {
+  transition: background-size .5s;
+  font font-weight: lighter;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.box:hover {
+  background-size: 5rem;
+} 
+
+.text {
+  font-size: 2rem; 
+  text-align: center;
+  padding-top: 13rem;
+  color: #ffff;
+}
+
+.box1 {
+  background-color: #ba2b2b;
+  grid-area: box1;
+  padding-top: 0rem;
+  padding-left: 1rem;
+}
+
+.name {
+  padding: -1rem;
+}
+
+.about {
+  padding: -1rem;
+}
+
+.button {
+  font-family: 'wrestlemania', serif;
+  font-size: 27px;
+  color: black;
+  background: none;
+  border-radius: none;
+  border: 3px solid;
+  border-color: black;
+  padding: 17px 17px 17px 17px;
+  margin-top: 0rem;
+}
+
+.button:hover {
+  background-color: #9f9f9f; 
+}
+
+.opponents-button {
+  margin-left: 0rem; 
+}
+
+.for-hugs-button {
+  margin-left: .5rem;
+}
+
+.box2 {
+  background-image: url('https://vignette.wikia.nocookie.net/prowrestling/images/5/5d/Hulk_Hogan1_2.png/revision/latest?cb=20131014061824');
+  background-size: 6rem;
+  grid-area: box2;
+  background-color: #9f9f9f; 
+}
+
+.box2:hover {
+  background-size: 7rem;
+}
+
+.box3 {
+  background-image: url('https://vignette.wikia.nocookie.net/prowrestling/images/b/b6/George_Steele_Full.png/revision/latest?cb=20120315090537');
+  background-size: 4rem;
+  background-color: #5c2222;
+  grid-area: box3;
+}
+
+.box4 {
+  background-image: url('http://laoblogger.com/images/ric-flair-clipart-2.jpg');
+  background-size: 5rem;
+  background-color: #9f9f9f;; 
+  grid-area: box4;
+}
+
+.box4:hover {
+  background-size: 7rem;
+}
+
+
+.box5 {
+  background-image: url('https://vignette.wikia.nocookie.net/prowrestling/images/2/20/Roddy_piper_pipers_pit_by_timinater94.png/revision/latest?cb=20140620174430');
+  background-size: 4rem;
+  background-color: #ba2b2b;
+  grid-area: box5;
+}
+
+.box6 {
+  background-image: url('http://1.bp.blogspot.com/--5ykJzj1YIc/T8uQn8oRUyI/AAAAAAAAARs/RkcMbWlMQpg/s400/Bret-Hart-psd19519.png');
+  background-size: 7rem;
+  background-color: #9f9f9f;
+  grid-area: box6;
+}
+
+.box6:hover {
+  background-size: 8rem;
+}
+
+.box7 {
+  background-color: #5c2222;
+  background-image: url('https://pre00.deviantart.net/a573/th/pre/f/2016/312/d/3/macho_man_randy_savage_png_by_ambriegnsasylum16-danr5p5.png');
+  background-size: 4rem;
+  grid-area: box7;
+}
+
+.box8 {
+  background-color: #9f9f9f;
+  background-image: url('https://pre00.deviantart.net/3364/th/pre/i/2014/104/3/e/ultimate_warrior_render_2_by_dfreedom30-d7eh8dk.png');
+  background-size: 4rem;
+  grid-area: box8;
+}
+
+.box9 {
+  background-image: url('https://i.pinimg.com/736x/c0/5c/9e/c05c9e1449ff3e706b554064855e98d4--andre-the-giant-the-giants.jpg');
+  background-size: cover;
+  grid-area: box9;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box9:hover {
+  background-size: cover;
+}
+
+.go {
+  display: flex;
+  justify-content: space-between;
+  font-size: 3rem;
+  background: none;
+  border: none;
+  color: #ffff;
+  margin-top: 17rem;
+}
+
+.go:hover {
+  font-size: 4rem;
+  transition: 1s;
+}
+
+.left {
+  margin-left: 1rem;
+}
+
+.right {
+  margin-right: 1rem;
+}
+
+@media screen and (max-width: 900px) {  
+  .icon-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: minmax(16.7rem, auto); 
+  align-content: center;
+
+  grid-template-areas:
+    "box1 box1 box2 box9 box9"
+    "box3 box4 box5 box9 box9"
+    "box6 box7 box8 box9 box9"; 
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .icon-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(16.7rem, auto); 
+    align-content: center;
+    grid-template-areas:
+      "box1 box1 box2" 
+      "box3 box4 box5" 
+      "box6 box7 box8" 
+      "box9 box9 box9";
+  }
+   .box9 {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1rKQt_UQTn0D6hEcqst-SjBtIb2yO-WnWkPkLklBCqE7Xzoosrg');
+   }
+}
+    
+@media screen and (max-width: 500px) {
+.icon-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(16.7rem, auto); 
+  align-content: center;
+  grid-template-areas:
+    "box1 box1"
+    "box2 box2"
+    "box3 box3"
+    "box4 box4"
+    "box5 box5"
+    "box6 box6"
+    "box7 box7"
+    "box8 box8"
+    "box9 box9";
+  }
+  .box9 {
+   background-image: url('https://411mania.com/wp-content/uploads/2016/08/Andre-the-Giant-645x370.jpg')
+   }
+}
