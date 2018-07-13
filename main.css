@@ -47,6 +47,7 @@ body {
 }
 
 .icon1 {
+  width: 30%;
 
 }
 
@@ -115,11 +116,11 @@ body {
   /*background-color: #9f9f9f; */
 }
 
-.box2:hover {
-  background-size: 7rem;
-}
 
 .box3 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
   border: 2px solid black;
   /*background-image: url('https://vignette.wikia.nocookie.net/prowrestling/images/b/b6/George_Steele_Full.png/revision/latest?cb=20120315090537');*/
   background-size: 4rem;
@@ -128,6 +129,9 @@ body {
 }
 
 .box4 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
   border: 2px solid black;
   /*background-image: url('http://laoblogger.com/images/ric-flair-clipart-2.jpg');*/
   /*background-size: 5rem;*/
@@ -135,13 +139,12 @@ body {
   grid-area: box4;
 }
 
-.box4:hover {
-  background-size: 7rem;
-}
 
 
 .box5 {
-  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-content: center;border: 2px solid black;
   /*background-image: url('https://vignette.wikia.nocookie.net/prowrestling/images/2/20/Roddy_piper_pipers_pit_by_timinater94.png/revision/latest?cb=20140620174430');*/
   background-size: 4rem;
   /*background-color: #ba2b2b;*/
@@ -149,18 +152,20 @@ body {
 }
 
 .box6 {
-  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-content: center;border: 2px solid black;
   /*background-image: url('http://1.bp.blogspot.com/--5ykJzj1YIc/T8uQn8oRUyI/AAAAAAAAARs/RkcMbWlMQpg/s400/Bret-Hart-psd19519.png');*/
   background-size: 7rem;
   /*background-color: #9f9f9f;*/
   grid-area: box6;
 }
 
-.box6:hover {
-  background-size: 8rem;
-}
 
 .box7 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
   border: 2px solid black;
   /*background-color: #5c2222;*/
   /*background-image: url('https://pre00.deviantart.net/a573/th/pre/f/2016/312/d/3/macho_man_randy_savage_png_by_ambriegnsasylum16-danr5p5.png');*/
@@ -169,6 +174,9 @@ body {
 }
 
 .box8 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
   border: 2px solid black;
   /*background-color: #9f9f9f;*/
   /*background-image: url('https://pre00.deviantart.net/3364/th/pre/i/2014/104/3/e/ultimate_warrior_render_2_by_dfreedom30-d7eh8dk.png');*/
@@ -199,10 +207,6 @@ body {
   margin-top: 17rem;
 }
 
-.go:hover {
-  font-size: 4rem;
-  transition: 1s;
-}
 
 .left {
   margin-left: 1rem;
