@@ -3,11 +3,7 @@
 }
 
 body {
-  height: 100vh;
-  /*font-family: 'wrestlemania', serif;*/
- /* border: 10px solid;
-  border-color: gray;
-  color: black;*/
+  /*height: 100vh;*/
 }
 
 
@@ -23,100 +19,86 @@ body {
     "box6 box7 box8 box9 box9";
 
     height: 100%;
-    /*width: 100%;*/
 
 }
 
 .hang-icon {
-  width: 5%;
+  width: 25px;
 }
 
 .love-icon {
-  width: 7%;
-
+  width: 25px;
 }
 
 .box {
-  /*display: flex;*/
- /* justify-content: center;
-  align-content: center;*/
-  place-items: center;
-
-/*  transition: background-size .5s;
-  font font-weight: lighter;
-  background-repeat: no-repeat;
-  background-position: center;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border: 2px solid black;
 }
 
-
-.box p, img {
-  margin-left: 3rem;
-}
-
 .box:hover {
-  border: 2px solid red;
-  
+  border: 2px solid red; 
 } 
 
-.point {
-  width: 10%;
-
-}
-
 .icon {
-  width: 20%;
-  display: block;
+  width: 45px;
 }
 
 .box1 {
- grid-area: box1;
-/*  padding-top: 0rem;
-  padding-left: 1rem;
-}*/
+  grid-area: box1;
+  border: 2px solid black;
 }
 
-.phone-icon {
-  width: 10%;
+h1 {
+  margin: 2em 1em 1em;
+
 }
 
-.name {
-  padding: -1rem;
+.description {
+  margin: 0 1em 1em 1.5em;
 }
 
+.hang-icon {
+  width: 25px;
+}
+
+.love-icon {
+  width: 25px;
+}
 
 button {
-  display: flex;
+  /*display: flex;
   background: none;
   border-radius: none;
   border: 3px solid;
   border-color: black;
   padding: 17px 17px 17px 17px;
-  margin-top: 0rem;
+  margin-top: 0rem;*/
 }
 
 .button:hover {
   background-color: #9f9f9f; 
 }
 
+.hang-loose {
+  margin: 0 1em 0 2em;
+}
+
+
 
 .box2 {
   grid-area: box2;
- 
 }
-
 
 .box3 {
- grid-area: box3;
-  
+ grid-area: box3; 
 }
-
 
 .box4 {
   grid-area: box4;
 }
-
-
 
 .box5 {
   grid-area: box5;
@@ -125,7 +107,6 @@ button {
 .box6 {
   grid-area: box6;
 }
-
 
 .box7 {
   grid-area: box7;
@@ -136,6 +117,7 @@ button {
 }
 
 .box9 {
+  grid-area: box9;
   border: 2px solid black;
   /*background-image: url('https://i.pinimg.com/736x/c0/5c/9e/c05c9e1449ff3e706b554064855e98d4--andre-the-giant-the-giants.jpg');*/
   /*background-size: cover;*/
@@ -144,14 +126,10 @@ button {
   justify-content: space-between;
 }
 
-./*box9:hover {
-  border: none; 
-}*/
+.point {
+  width: 45px;
 
-.go {
- 
 }
-
 
 .left {
   margin-left: 1rem;
@@ -212,4 +190,33 @@ button {
   /*.box9 {
    background-image: url('https://411mania.com/wp-content/uploads/2016/08/Andre-the-Giant-645x370.jpg')
    }*/
+}
+
+@media screen and (max-width: 500px) {
+.icon-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(16.7rem, auto); 
+  align-content: center;
+  grid-template-areas:
+    "box1 box1"
+    "box2 box2"
+    "box3 box3"
+    "box4 box4"
+    "box5 box5"
+    "box6 box6"
+    "box7 box7"
+    "box8 box8"
+    "box9 box9";
+  }
+  /*.box9 {
+   background-image: url('https://411mania.com/wp-content/uploads/2016/08/Andre-the-Giant-645x370.jpg')
+   }*/
+
+   .box1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+   }
 }
