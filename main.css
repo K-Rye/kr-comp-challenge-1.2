@@ -39,6 +39,12 @@ body {
   color: #f2f1f2;
 }
 
+.far {
+  margin-top: 1em;
+  font-size: 3em;
+  color: #f2f1f2;
+}
+
 .icon:hover {
   color: #f2f1f2;
 }
