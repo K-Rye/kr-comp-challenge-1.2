@@ -24,7 +24,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid black;
+  /*border: 2px solid black;*/
+  color: #f2f1f2;
+  font-size: 1.15em;
 }
 
 .box:hover {
@@ -34,11 +36,19 @@ body {
 .icon {
   margin-top: 2em;
   width: 50px;
+  color: #f2f1f2;
 }
+
+.icon:hover {
+  color: #f2f1f2;
+}
+
 
 .box1 {
   grid-area: box1;
   border: 2px solid black;
+  background-color: #252525;
+  color: #f2f1f2;
 }
 
 h1 {
@@ -52,20 +62,23 @@ h1 {
 }
 
 .box1-icon {
+  color: #f2f1f2;
   width: 15px;
   margin: 0 .30em;
 }
 
 button {
   display: inline-block;
-  background: none;
-  border: 3px solid;
+  background-color: #625a51;
+  color: #f2f1f2;
+  border: none /*3px solid*/ ;
   font-size: .75em;
   padding: 1.15em 1.5em 1.15em 1.5em ;
 }
 
 button:hover {
-  background-color: #9f9f9f; 
+  background-color: #f2f1f2;
+  color: #252525; 
 }
 
 .hang-loose {
@@ -74,35 +87,42 @@ button:hover {
 
 .box2 {
   grid-area: box2;
+  background-color: #625a51;
 }
 
 .box3 {
  grid-area: box3; 
+ background-color: #4e4b43;
 }
 
 .box4 {
   grid-area: box4;
+  background-color: #625a51;
 }
 
 .box5 {
   grid-area: box5;
+  background-color: #252525;
 }
 
 .box6 {
   grid-area: box6;
+  background-color: #625a51;
 }
 
 .box7 {
   grid-area: box7;
+  background-color: #252525;
 }
 
 .box8 {
   grid-area: box8;
+  background-color: #4e4b43;
 }
 
 .box9 {
   grid-area: box9;
-  border: 2px solid black;
+  /*border: 2px solid black;*/
   background-image: url("images/Hood.jpg");
   background-size: cover;
   display: inline-block;
@@ -124,6 +144,10 @@ button:hover {
 
 .point {
   width: 30px;
+}
+
+.point:hover {
+  color: #7c674b;
 }
 
 .left {
