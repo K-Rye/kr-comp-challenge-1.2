@@ -3,10 +3,8 @@
 }
 
 body {
-  /*height: 100vh;*/
+ font-family: 'Source Sans Pro', sans-serif;
 }
-
-
 
 .icon-container {
   display: grid;
@@ -17,17 +15,8 @@ body {
     "box1 box1 box2 box9 box9"
     "box3 box4 box5 box9 box9"
     "box6 box7 box8 box9 box9";
-
     height: 100%;
-
-}
-
-.hang-icon {
-  width: 25px;
-}
-
-.love-icon {
-  width: 25px;
+    width: 100%;
 }
 
 .box {
@@ -43,7 +32,8 @@ body {
 } 
 
 .icon {
-  width: 45px;
+  margin-top: 2em;
+  width: 50px;
 }
 
 .box1 {
@@ -52,41 +42,35 @@ body {
 }
 
 h1 {
-  margin: 2em 1em 1em;
-
+  margin: 1.5em .75em .75em;;
+  font-size: 2em;
 }
 
 .description {
-  margin: 0 1em 1em 1.5em;
+  margin: 0 1em .5em 1.5em;
+  line-height: 1.25em; 
 }
 
-.hang-icon {
-  width: 25px;
-}
-
-.love-icon {
-  width: 25px;
+.box1-icon {
+  width: 15px;
+  margin: 0 .30em;
 }
 
 button {
-  /*display: flex;
+  display: inline-block;
   background: none;
-  border-radius: none;
   border: 3px solid;
-  border-color: black;
-  padding: 17px 17px 17px 17px;
-  margin-top: 0rem;*/
+  font-size: .75em;
+  padding: 1.15em 1.5em 1.15em 1.5em ;
 }
 
-.button:hover {
+button:hover {
   background-color: #9f9f9f; 
 }
 
 .hang-loose {
   margin: 0 1em 0 2em;
 }
-
-
 
 .box2 {
   grid-area: box2;
@@ -119,16 +103,27 @@ button {
 .box9 {
   grid-area: box9;
   border: 2px solid black;
-  /*background-image: url('https://i.pinimg.com/736x/c0/5c/9e/c05c9e1449ff3e706b554064855e98d4--andre-the-giant-the-giants.jpg');*/
-  /*background-size: cover;*/
-  grid-area: box9;
+  background-image: url("images/Hood.jpg");
+  background-size: cover;
+  display: inline-block;
+  
+}
+
+.dots {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1em 1em 1em 1em;
+}
+
+.pointers-container {
   display: flex;
   justify-content: space-between;
+  height: 86%;
+  /*align-content: center;*/
 }
 
 .point {
-  width: 45px;
-
+  width: 30px;
 }
 
 .left {
@@ -166,7 +161,7 @@ button {
       "box9 box9 box9";
   }
    .box9 {
-    /*background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1rKQt_UQTn0D6hEcqst-SjBtIb2yO-WnWkPkLklBCqE7Xzoosrg');*/
+    background-image: url('images/Door.jpg')
    }
 }
     
@@ -187,9 +182,14 @@ button {
     "box8 box8"
     "box9 box9";
   }
-  /*.box9 {
-   background-image: url('https://411mania.com/wp-content/uploads/2016/08/Andre-the-Giant-645x370.jpg')
-   }*/
+  .box9 {
+   background-image: url('images/Trunk.jpg')
+   }
+
+.pointers {
+  height: 76%;
+}
+
 }
 
 @media screen and (max-width: 500px) {
@@ -213,10 +213,27 @@ button {
    background-image: url('https://411mania.com/wp-content/uploads/2016/08/Andre-the-Giant-645x370.jpg')
    }*/
 
-   .box1{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  h1 {
+  margin: 1em .75em .75em;;
+  font-size: 1.5em;
+}
+.you {
+  display: none;
+}
 
-   }
+.loose {
+  display: none;
+}
+  
+button {
+  background: none;
+  border: 3px solid;
+  padding: 1.15em 1.5em 1.15em 1.5em ;
+}
+.box1-icon {
+  width: 40px;
+  margin: 0 .30em;
+}
+
+
 }
