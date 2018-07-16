@@ -10,10 +10,8 @@ body {
 .icon-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  /*grid-auto-rows: minmax(16.7rem, auto);*/
-  grid-auto-rows: minmax(18.4rem, auto);
-  /*grid-template-rows: repeat(3, 1fr); */
-  /*height: 100vh;*/
+  grid-template-rows: repeat(3, 1fr); 
+  height: 100vh;
   align-content: center;
   grid-template-areas: 
     "box1 box1 box2 box9 box9"
@@ -31,7 +29,7 @@ body {
 }
 
 .far {
-  margin-top: 1em;
+  margin: .25em 0 .25em 0;
   font-size: 3em;
   color: #b4b0ac;
 }
@@ -53,8 +51,8 @@ body {
 
 h1 {
   color: #b4b0ac;
-  margin: 1.5em .75em .75em;;
-  font-size: 2em;
+  margin: 1.25em .75em .75em;;
+  font-size: 1.75em;
 }
 
 .description {
@@ -126,6 +124,7 @@ button:hover {
 .box9 {
   grid-area: box9;
   background-image: url("images/Hood.jpg");
+  object-fit: contain;
   background-size: cover;
   display: inline-block; 
 }
@@ -144,9 +143,8 @@ button:hover {
 .pointers-container {
   display: flex;
   justify-content: space-between;
-  /*margin-top: 20em;*/
-  margin-top: 23em; 
-}
+  margin-top: 19em;
+  }
 
 .fa-hand-point-left {
   color: #4e4b43;
