@@ -145,9 +145,7 @@ button:hover {
   display: flex;
   justify-content: space-between;
   /*margin-top: 20em;*/
-  margin-top: 23em;
-
-  
+  margin-top: 23em; 
 }
 
 .fa-hand-point-left {
@@ -176,7 +174,8 @@ button:hover {
   }
    
   .box9 {
-  background-image: url('images/Door.jpg')
+  background-image: url('images/Door.jpg');
+  background-size: cover;
   }
 
   .pointers-container {
@@ -205,7 +204,8 @@ button:hover {
   }
 
 .box9 {
-  background-image: url('images/Trunk.jpg')
+  background-image: url('images/Trunk.jpg');
+  background-size: cover;
   }
 
 .pointers-container {
